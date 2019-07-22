@@ -1,0 +1,31 @@
+Swagger documentation:
+
+https://westus.cris.ai/swagger/ui/index#/Custom%20Speech%20transcriptions%3A/GetSupportedLocalesForTranscriptionsBBa
+
+cognitive services:
+https://westus.cris.ai/swagger/ui/index#/Custom%20Speech%20transcriptions%3A/GetSupportedLocalesForTranscriptionsBBa
+
+
+Working batch transcriptions:
+
+POST /api/speechtotext/v2.0/transcriptions HTTP/1.1
+Host: eastus.cris.ai
+Content-Type: application/json
+Ocp-Apim-Subscription-Key: ****
+Cache-Control: no-cache
+Postman-Token: 0d7fd23b-d13d-b1c2-e7a7-578cf78a6903
+
+{
+  "recordingsUrl": "https://pluraralsightne9dab.blob.core.windows.net/data?sp=rl&st=2019-07-22T01:49:35Z&se****",
+  "models": [],
+  "locale": "en-us",
+  "name": "test1",
+  "description": "test from airport",
+  "properties": {
+    "ProfanityFilterMode": "Masked",
+    "PunctuationMode": "DictatedAndAutomatic",
+    "AddWordLevelTimestamps" : "True",
+    "AddSentiment" : "True"
+  }
+}
+
